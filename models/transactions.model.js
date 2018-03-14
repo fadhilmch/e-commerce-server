@@ -6,14 +6,14 @@ module.exports = mongoose.model('Transaction', new Schema({
         type:Schema.Types.ObjectId,
         ref:'User'
     },
-    itemsPurchased: [
+    itemsPurchased: [{
         item:{
             type:Schema.Types.ObjectId,
             ref:'Item'
         },
         quantity:Number,
         subtotal:Number
-    ],
+    }],
     total: Number
 },{
     timestamps: true;

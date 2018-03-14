@@ -14,7 +14,8 @@ var transactions = require('./routes/transactions');
 
 var app = express();
 
-const dbURL = 'mongodb://localhost:27017/e-commerce'
+// const dbURL = 'mongodb://localhost:27017/e-commerce'
+const dbURL = 'mongodb://fadhilmch:123456@ds215019.mlab.com:15019/faduino'
 const db = mongoose.connection;
 
 app.use(cors())
